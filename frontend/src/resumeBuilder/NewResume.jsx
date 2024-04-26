@@ -1,12 +1,8 @@
-import React from "react";
-import HeaderInner from "./HeaderInner";
-
 function NewResume() {
   return (
-    <>
-      <HeaderInner />
-      <div>NewResume</div>
-    </>
+    <div className="w-full flex h-screen items-center justify-center">
+      Select a section to edit
+    </div>
   );
 }
 
