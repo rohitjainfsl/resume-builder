@@ -1,9 +1,17 @@
-import { Outlet, useParams } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 function ResumeSection() {
   return (
     <div className="resumeSection w-1/2">
-      <Outlet />
+      <form method="post">
+        <div className="form-group">
+          <button className="next bg-green-500 text-white rounded px-2">
+            Next <ArrowRightAltIcon />
+          </button>
+        </div>
+        <Outlet />
+      </form>
     </div>
   );
 }
